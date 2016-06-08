@@ -12,7 +12,7 @@ public class PlaySong {
 	public static void main(String[] args) {
 		FileInputStream fis;
 		try {
-			fis = new FileInputStream("miss.wav");
+			fis = new FileInputStream("miss.wav");//The type of the song must be wav,mp3 is not avaliable
 			AudioStream as = new AudioStream(fis);
 
 			AudioPlayer.player.start(as);
